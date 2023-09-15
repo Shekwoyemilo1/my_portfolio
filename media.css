@@ -36,12 +36,21 @@
          padding-left: 12px;
       }
       .my_image{
-         width: 100px;
-         height: 140px;
          margin: 0;
       }
       .about{
          display: block;
       }
-   
+      .aboutp1{
+         background: rgba(255, 255, 255, 0.4);
+         width: fit-content;
+         text-rendering: geometricPrecision;
+         padding:  20px;
+         text-align: justify;
+         color: rgb(113, 1, 1);
+         border-radius: 10px;
+         cursor: default;
+         font-stretch: 40px;
+         font-weight: bolder;
+      }
 }
