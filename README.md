@@ -1,2 +1,1 @@
-# my_portfolio
-my personal project
+my personal portfolio project
