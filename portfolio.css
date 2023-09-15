@@ -1,0 +1,273 @@
+@import url("media.css");
+
+/*
+*this is copy right from shekwoyemilo....
+*do not copy without parmission 
+*/
+*{
+   padding: 0;
+   margin: 0;
+}
+html{
+   padding-bottom: 0;
+   margin-bottom: 0;
+}
+
+body{
+   color:hsl(0, 0%, 97%);
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   padding: 20px;
+   background:url('8f65e6f22dbe9d6f3431c8e531fdb7c5.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   backdrop-filter: blur(2px) brightness(80%);
+}
+.header{
+   color: rgb(255, 166, 0);
+   font-size: 14px; 
+   animation: header ease 5s infinite;
+   filter: contrast(150%);
+   box-sizing: content-box;
+   backdrop-filter: blur(10px), contrast(30%);
+}
+@keyframes header{
+   from{
+      color: rgb(44, 28, 0);
+      rotate: 10deg;
+   }
+   to{
+      color: orange;
+      rotate: -40deg;
+   }
+}
+.nav{
+   display: flex;
+   gap: 50px;
+   background: transparent;
+   padding: 9px;
+   height: fit-content;
+   margin-bottom: 60px;
+   text-align: center;
+   backdrop-filter: blur(100px);
+   border-bottom: 1px solid rgb(255, 255, 255);
+   padding-bottom: 20px;
+   border-radius: 4px;
+   padding-left: 12px;
+}
+/*@keyframes anime{
+   from {background-color: rgb(155, 0, 0);}
+   to {background:transparent;}}*/
+.nav .navig{
+   padding: 5px;
+   background: transparent;
+   border-radius: 9px;
+   backdrop-filter: blur(7px);
+   box-shadow:0px 0px 8px rgb(255, 255, 255);
+   border: 1px solid black;
+   cursor: inherit;
+   left: 100px;
+   position: relative;
+}
+.nav a:hover{
+   color: rgb(255, 0, 0);
+   padding: 3px;
+   transition: all ease-in 0.5s;
+   font-size: 9px;
+   font-weight: 500;
+   font-variant: 400;
+   filter: brightness(200%);
+}
+.navig a{
+   text-decoration: none;
+   color: orange;
+   filter: contrast(150%);
+   font-family: Georgia;
+   font-style: italic;
+   font-variant: normal;
+   font-weight: 500;
+}
+.image{
+   display: block;
+}
+.about{
+   display: flex;
+   gap: 40px;
+}
+
+/*.nav{
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(4, 5cm);
+   gap: 15px;
+   color: rgb(255, 255, 255);
+   padding: 13px;
+   text-indent: 10px;
+   font-family: Georgia, Tahoma, Geneva, Verdana, sans-serif;
+   text-emphasis:initial;
+   font-size: 17px;
+   text-transform: lowercase;
+   clip-path: stroke-box;
+   border-bottom:2px solid rgb(22, 22, 22);
+   border-radius: 5px;
+   height: auto;
+   align-items: center;
+
+}
+.navig{
+   padding: 2px;
+   border-radius: 5px;
+   background-color: rgb(22, 22, 22);
+   text-align: center;
+   left: 5%;
+   border: none;
+   color: inherit;
+   filter: contrast(200%);
+   align-self: center;
+}
+.navig:hover{
+   padding: 3px;
+   color: blueviolet;
+   font-size: 16px;
+   background-color: azure;
+   
+}
+.more{
+   color: blue inportant;
+}
+.facebook{
+   font-size: 30px;
+   font-family: sans-serif;
+   border-radius: 12px;
+   height: 28.5px;
+   padding-bottom: 0px;
+   border: none;
+   text-rendering: optimizeSpeed;
+   background-color: blue;
+   width: 30px;
+   font-weight: 200px;
+   color: white;
+}
+.face_link:link{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+}
+a:link{
+   color: inherit;
+   text-decoration: none;
+}
+a:visited{
+   color: inherit;
+}
+a::after{
+   color: inherit;
+}
+.more{
+   color: blue;
+}
+.color{
+   background: linear-gradient(80deg, orange 0%, aqua );
+   height: 150px;
+   width: 150px;
+   border-radius: 100%;
+   margin-left: 190px;
+   text-align: center;
+}
+.table{
+   color: black;
+   width: 300px;  
+   padding: 10px;
+   border-radius: 10px;
+   left: 300px;
+   border-right-width: 0.6px;
+   backdrop-filter: brightness(80%) blur(20px);
+   background-color: inherit;
+   background-blend-mode: screen;
+   mix-blend-mode: multiply;
+} 
+progress{
+   height: 20px;
+   width: 80px;
+}
+td{
+   text-align: center;
+   backdrop-filter: blur(23px) brightness(80%);
+   border-radius: 12px;
+   white-space: pre-line;
+}
+.box_style{
+   width:20px;
+   text-align: center;
+   border-radius: 5px;
+   padding: 3px;
+   border-right: none;
+}
+tr{
+   column-width: 10px;
+}
+footer{ 
+   background-color: rgb(232, 232, 232);
+}*/
+.my_image{
+   border-radius: 200px;
+   height: 50vh;
+   filter: drop-shadow(3px 5px 10px white);
+   position: relative;
+   margin-left: 50px;
+   animation: slidein 2s ease;
+}
+@keyframes slidein {
+   from{
+      margin-left: 100%;
+   }
+   to{
+      margin-left: 10%;
+   }
+}
+.aboutp1{
+   position: relative;
+   left: 400px;
+   bottom: 150px;
+   background: rgba(255, 255, 255, 0.4);
+   width: fit-content;
+   text-rendering: geometricPrecision;
+   padding:  20px;
+   text-align: justify;
+   color: rgb(113, 1, 1);
+   border-radius: 10px;
+   cursor: default;
+   font-stretch: 40px;
+   font-weight: bolder;
+}
+.hello{
+   font-size: 20px;
+   color:rgb(36, 1, 37);
+   letter-spacing: 5px;
+   font-weight: bolder;
+}
+.aboutp1 strong{
+   color: rgb(3, 59, 55);
+   font-size: 30px;
+   margin-left: 40px;
+}
+.about_me{
+   position: relative;
+   bottom: 40px;
+   margin-bottom: 20px;
+   font-family: inherit;
+   background: linear-gradient(45deg, rgb(1, 131, 1, 0.4), rgb(206, 206, 206, 0.5), rgb(255, 166, 0, 0.4));
+   padding: 100px;
+   border-radius: 30px;
+   
+}
+/*@keyframes example {
+   0%   {background-color:red; left:0px; top:0px;}
+   25%  {background-color:yellow; left:200px; top:0px;}
+   50%  {background-color:blue; left:200px; top:200px;}
+   75%  {background-color:green; left:0px; top:200px;}
+   100% {background-color:red; left:0px; top:0px;}
+ }
+.footer{
+   animation: example 6s;
+}*/
+
