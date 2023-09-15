@@ -8,13 +8,40 @@
 }
 @media screen and (max-width:600px) {
    body{
-      display: block;
+      display: inline-block;
       nav-down: current;
-      font-size: 14px;
+      font-size: auto;
       font-weight: 600;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-rendering: optimizeSpeed;
       font-variant: normal;
+      background:url('8f65e6f22dbe9d6f3431c8e531fdb7c5.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(2px) brightness(80%);
    }
+      .nav{
+         display: block;
+         gap: 50px;
+         background: transparent;
+         padding: 9px;
+         height: fit-content;
+         margin-bottom: 60px;
+         text-align: center;
+         backdrop-filter: blur(100px);
+         border-bottom: 1px solid rgb(255, 255, 255);
+         padding-bottom: 20px;
+         border-radius: 4px;
+         padding-left: 12px;
+      }
+      .my_image{
+         width: 100px;
+         height: 140px;
+         margin: 0;
+      }
+      .about{
+         display: block;
+      }
    
 }
