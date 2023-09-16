@@ -8,8 +8,9 @@
 }
 @media screen and (max-width:600px) {
    body{
-      display: inline-block;
-      nav-down: current;
+      width: min-content;
+      padding: 0;
+      display: block;
       font-size: auto;
       font-weight: 600;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,15 +18,15 @@
       font-variant: normal;
       background:url('8f65e6f22dbe9d6f3431c8e531fdb7c5.jpg');
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: center;
       backdrop-filter: blur(2px) brightness(80%);
    }
       .nav{
          display: block;
-         gap: 50px;
+         gap: 10px;
          background: transparent;
-         padding: 9px;
+         padding: 5px;
          height: fit-content;
          margin-bottom: 60px;
          text-align: center;
@@ -45,7 +46,7 @@
          background: rgba(255, 255, 255, 0.4);
          width: fit-content;
          text-rendering: geometricPrecision;
-         padding:  20px;
+         padding:  10px;
          text-align: justify;
          color: rgb(113, 1, 1);
          border-radius: 10px;
