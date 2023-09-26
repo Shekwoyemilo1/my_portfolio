@@ -4,7 +4,147 @@
 *this is copy right from shekwoyemilo....
 *do not copy without parmission 
 */
+
 *{
+   padding: 0;
+   margin: 0;
+}
+html{
+   padding-bottom: 0;
+   margin-bottom: 0;
+}
+body{
+   color:hsl(0, 0%, 97%);
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   background:url('mrlxr6luuc411.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   backdrop-filter: blur(2px) brightness(60%);
+}
+.header{
+   position: absolute;
+   left: 20px;
+   top: 20px;
+   color: rgb(255, 166, 0);
+   font-size: 14px; 
+   animation: header ease 5s 4;
+   filter: contrast(150%);
+   box-sizing: content-box;
+   width: fit-content;
+   padding: 6px;
+}
+@keyframes header{
+   from{
+      color: rgb(44, 28, 0);
+      rotate: 10deg;
+   }
+   to{
+      color: orange;
+      rotate: -20deg;
+   }
+}
+.navigator{
+   background-color: #002143;
+   height: 200px;
+   margin-bottom: 40px;
+   backdrop-filter: contrast(10%);
+   background-blend-mode: darken;
+}
+.nav{
+   top: 10px;
+   display: flex;
+   gap: auto;
+   position: absolute;
+   padding: 9px;
+   width: fit-content;
+   text-align: center;
+   border-radius: 4px;
+}
+/*@keyframes anime{
+   from {background-color: rgb(155, 0, 0);}
+   to {background:transparent;}}*/
+.nav .navig{
+   padding: 5px;
+   border: none;
+   cursor: inherit;
+   height: fit-content;
+   position: relative;
+   background: none;
+}
+.image{
+ padding: 0;
+ margin: 0;
+}
+ .nav a:hover{
+   color: rgb(0, 65, 98);
+   padding: 3px;
+   transition: all ease-in 0.5s 1;
+   font-size: 12px;
+   font-weight: 500;
+   font-variant: 400;
+   filter: brightness(200%);
+}
+.navig a{
+   text-decoration: none;
+   color: #6effc0;
+   filter: contrast(150%);
+   font-family: Georgia;
+   font-style: italic;
+   font-variant: normal;
+   font-weight: bolder;
+ }
+ .image{
+   display: block;
+ }
+ .about{
+    padding: 15px;
+ }
+.my_image{
+   border-radius: 200px;
+   height: 200px;
+   
+}
+@keyframes slidein {
+   from{
+      margin-left: 100%;
+   }
+   to{
+      margin-left: 15%;
+   }
+}
+ .aboutp1{
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.4);
+    text-rendering: geometricPrecision;
+    padding:  20px;
+    padding-left: 30px;
+    text-align: justify;
+    color: #560039;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: default;
+ }
+ .aboutp1 a{
+    text-decoration: none;
+    color: rgb(0, 0, 77);
+ }
+ .aboutp1 a:hover{
+    font-size: 17px;
+    color: blue;
+    text-decoration: underline;
+ }
+ .hello{
+    font-size: 20px;
+    color: rgb(32, 0, 54);
+ }
+.service{
+   padding: 20px;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/**{
    padding: 0;
    margin: 0;
 }
@@ -57,7 +197,7 @@ body{
 }
 /*@keyframes anime{
    from {background-color: rgb(155, 0, 0);}
-   to {background:transparent;}}*/
+   to {background:transparent;}}
 .nav .navig{
    padding: 5px;
    background: transparent;
@@ -93,9 +233,7 @@ body{
 .about{
    display: flex;
    gap: 40px;
-}
-
-/*.nav{
+}.nav{
    position: relative;
    display: grid;
    grid-template-columns: repeat(4, 5cm);
@@ -207,7 +345,7 @@ tr{
 }
 footer{ 
    background-color: rgb(232, 232, 232);
-}*/
+}
 .my_image{
    border-radius: 200px;
    height: 50vh;
@@ -260,7 +398,7 @@ footer{
    border-radius: 30px;
    
 }
-/*@keyframes example {
+@keyframes example {
    0%   {background-color:red; left:0px; top:0px;}
    25%  {background-color:yellow; left:200px; top:0px;}
    50%  {background-color:blue; left:200px; top:200px;}
@@ -270,4 +408,3 @@ footer{
 .footer{
    animation: example 6s;
 }*/
-

@@ -1,57 +1,332 @@
 /*my media query css "screen size"*/
-@media  screen and (max-width: 992px) {
-   body{
-    background-color: lightgrey;
-    display: block;
+@media screen and (min-width: 600px) {
+   body {
+      color: hsl(0, 0%, 97%);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(2px) brightness(60%);
+   }
+
+   .header {
+      position: relative;
+      left: 20px;
+      top: 20px;
+      color: rgb(255, 166, 0);
+      font-size: 14px;
+      animation: header ease 5s 4;
+      filter: contrast(150%);
+      box-sizing: content-box;
+      width: fit-content;
+      padding: 6px;
+   }
+
+   @keyframes header {
+      from {
+         color: rgb(44, 28, 0);
+         rotate: 10deg;
+      }
+
+      to {
+         color: orange;
+         rotate: -20deg;
+      }
+   }
+
+   .navigator {
+      background-color: #002447;
+      height: 200px;
+      margin-bottom: 40px;
+      backdrop-filter: contrast(10%);
+      background-blend-mode: darken;
+   }
+
+   .nav {
+      bottom: 10px;
+      left: 450px;
+      display: flex;
+      gap: 50px;
+      position: absolute;
+      padding: 9px;
+      width: fit-content;
+      text-align: center;
+      border-radius: 4px;
+   }
+
+   /*@keyframes anime{
+       from {background-color: rgb(155, 0, 0);}
+       to {background:transparent;}}*/
+   .nav .navig {
+      padding: 5px;
+      border: none;
+      cursor: inherit;
+      height: fit-content;
+      position: absolute;
+      background: none;
+   }
+
+   .image {
+      padding: 0;
+      margin: 0;
+   }
+
+   .nav a:hover {
+      color: rgb(0, 65, 98);
+      padding: 3px;
+      transition: all ease-in 0.5s 1;
+      font-size: 12px;
+      font-weight: 500;
+      font-variant: 400;
+      filter: brightness(200%);
+   }
+
+   .navig a {
+      text-decoration: none;
+      color: #6effc0;
+      filter: contrast(150%);
+      font-family: Georgia;
+      font-style: italic;
+      font-variant: normal;
+      font-weight: bolder;
+   }
+
+   .image {
+      display: block;
+   }
+
+   .about {
+      display: flex;
+      gap: 70px;
+      padding: 10px;
+   }
+
+   .my_image {
+      border-radius: 200px;
+      height: 200px;
+      position: relative;
+      margin-left: 130px;
+      animation: slidein 2s ease;
+   }
+
+   @keyframes slidein {
+      from {
+         margin-left: 100%;
+      }
+
+      to {
+         margin-left: 15%;
+      }
+   }
+
+   .aboutp1 {
+      position: absolute;
+      height: fit-content;
+      background: rgba(255, 255, 255, 0.4);
+      width: 300px;
+      text-rendering: geometricPrecision;
+      padding: 20px;
+      padding-left: 70px;
+      text-align: justify;
+      color: #ffa600;
+      font-weight: bolder;
+      border-radius: 10px;
+      cursor: default;
+      right: 150px;
+      bottom: 245px;
+   }
+
+   .aboutp1 a {
+      text-decoration: none;
+      color: rgb(0, 0, 77);
+   }
+
+   .aboutp1 a:hover {
+      font-size: 17px;
+      color: blue;
+      text-decoration: underline;
+   }
+
+   .hello {
+      font-size: 20px;
+      color: rgb(32, 0, 54);
+   }
+
+   .service {
+      background: #ffffff;
+      color: black;
+   }
+
+   .techlist {
+      display: flex;
+      gap: 50px;
+      list-style: circle;
+      list-style-position: inside;
+      align-content: center;
+      width: fit-content;
+      padding: 9px;
+      margin-top: 8px;
+      margin-left: 250px;
+      color: #0e0009;
+   }
+
+   .techlist li {
+      height: fit-content;
+      border: 1px solid rgb(0, 0, 0);
+      align-items: center;
+      padding: 5px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border-radius: 10px;
    }
    
 }
-@media screen and (max-width:600px) {
-   body{
-      width: min-content;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+   * {
+      margin: 0;
       padding: 0;
-      display: block;
-      font-size: auto;
-      font-weight: 600;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-rendering: optimizeSpeed;
-      font-variant: normal;
-      background:url('8f65e6f22dbe9d6f3431c8e531fdb7c5.jpg');
+   }
+
+   body {
+      color: hsl(0, 0%, 97%);
+      font-family: Georgia, 'Times New Roman', Times, serif;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      backdrop-filter: blur(2px) brightness(80%);
+      backdrop-filter: blur(2px);
+      color: black;
    }
-      .nav{
-         display: block;
-         gap: 10px;
-         background: transparent;
-         padding: 5px;
-         height: fit-content;
-         margin-bottom: 60px;
-         text-align: center;
-         backdrop-filter: blur(100px);
-         border-bottom: 1px solid rgb(255, 255, 255);
-         padding-bottom: 20px;
-         border-radius: 4px;
-         padding-left: 12px;
-      }
-      .my_image{
-         margin: 0;
-      }
-      .about{
-         display: block;
-      }
-      .aboutp1{
-         background: rgba(255, 255, 255, 0.4);
-         width: fit-content;
-         text-rendering: geometricPrecision;
-         padding:  10px;
-         text-align: justify;
-         color: rgb(113, 1, 1);
-         border-radius: 10px;
-         cursor: default;
-         font-stretch: 40px;
-         font-weight: bolder;
-      }
+
+   .my_image {
+      margin-left: 25px;
+      border-radius: 60%;
+   }
+
+   .nav {
+      display: block;
+      position: absolute;
+      right: 20px;
+   }
+
+   .about {
+      background: transparent;
+      border-bottom: 2px solid #bddeff;
+      display: inline-block;
+      width: auto;
+      margin-left: 17%;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      position: relative;
+      bottom: 150px;
+   }
+
+   .aboutp1 {
+      background: rgb(255, 166, 0, 0.3);
+      width: 200px;
+      padding: 30px;
+      border-radius: 5px;
+      position: relative;
+   }
+
+   .service {
+      padding: 10px;
+      color: #89ba40;
+      position: relative;
+      bottom: 80px;
+      padding-left: 0;
+      padding-right: 0;
+      background: rgba(0, 36, 56, 0.9);
+      filter: contrast(130px);
+      height: 200px;
+   }
+   .service li{
+      text-align: justify;
+      margin-top: 40px;
+      list-style: circle;
+      font-weight: 1000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: rgb(33, 33, 33, 0.2);
+      padding: 10px;
+      color: orange;
+      box-shadow: inset 0 0 10px whitesmoke;
+      width: fit-content;
+      border-radius: 10px;
+   }
+   .service strong{
+      font-size: 50px;
+      color: antiquewhite;
+   }
+   fieldset{
+      border-width: 2px 2px 0 0;
+      border-style: solid solid none none;
+      border-color: #ffae00;
+      margin-bottom: 1px;
+      padding: 5px;
+      height: 180px;
+   }
+   .techlist{
+      display: flex;
+      gap: 30px;
+   }
+   legend{
+      font-weight: 900;
+   }
+   .footer {
+      background: olive;
+      position: relative;
+      padding: 20px;
+      text-align: center;
+      display: block;
+      font-size: 20px;
+   }
+   footer a{
+      text-decoration: none;
+      color: #6effc0;
+   }
+   footer .top{
+      background: rgb(0, 0, 15, 0.5);
+      font-size: 16px;
+      margin-top: 5px;
+      padding: 5px;
+      border-radius: 5px;
+      border-style: 2px 0 2px 0;
+      border-style: solid none solid none;
+      border-color: #0e0009;
+      color: wheat;
+   }
+   .top2{
+      color: #9fe768;
+      font-weight: 1000;
+      font-style: italic;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: rgb(105, 104, 104, 0.3);
+      box-shadow: inset 0 0 6px rgb(188, 253, 108);
+      font-size: 16px;
+      border: none;
+      padding: 5px;
+      border-radius: 50%;
+      height: 70px;
+   }
 }
