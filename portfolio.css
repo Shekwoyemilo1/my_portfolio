@@ -99,6 +99,7 @@ body{
  }
  .about{
     padding: 15px;
+    text-align: auto;
  }
 .my_image{
    border-radius: 200px;
@@ -117,11 +118,9 @@ body{
     height: fit-content;
     background: rgba(255, 255, 255, 0.4);
     text-rendering: geometricPrecision;
-    padding:  20px;
-    padding-left: 30px;
-    text-align: justify;
-    color: #560039;
-    font-weight: bolder;
+    padding:  auto;
+    text-align: auto;
+    font-weight: 1000;
     border-radius: 10px;
     cursor: default;
  }

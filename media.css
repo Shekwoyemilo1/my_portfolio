@@ -216,10 +216,11 @@
       background-position: center;
       backdrop-filter: blur(2px);
       color: black;
+      scroll-behavior: smooth;
    }
 
    .my_image {
-      margin-left: 25px;
+      margin-left: auto;
       border-radius: 60%;
    }
 
@@ -231,22 +232,22 @@
 
    .about {
       background: transparent;
-      border-bottom: 2px solid #bddeff;
-      display: inline-block;
+      border-bottom: 2px solid #000000;
+      display: block;
       width: auto;
-      margin-left: 17%;
-      align-items: center;
-      align-content: center;
-      align-self: center;
+      text-align: center;
       position: relative;
       bottom: 150px;
    }
-
    .aboutp1 {
+      color: rgb(0, 60, 60);
       background: rgb(255, 166, 0, 0.3);
-      width: 200px;
-      padding: 30px;
+      text-align: center;
+      padding: 10px;
       border-radius: 5px;
+      font-size: 17px;
+      margin-left: 40px;
+      margin-right: 40px;
       position: relative;
    }
 
@@ -263,12 +264,12 @@
    }
    .service li{
       text-align: justify;
-      margin-top: 40px;
+      margin-top: 30px;
       list-style: circle;
       font-weight: 1000;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: rgb(33, 33, 33, 0.2);
-      padding: 10px;
+      padding: 5px;
       color: orange;
       box-shadow: inset 0 0 10px whitesmoke;
       width: fit-content;
@@ -288,7 +289,7 @@
    }
    .techlist{
       display: flex;
-      gap: 30px;
+      gap: 18.5px;
    }
    legend{
       font-weight: 900;
